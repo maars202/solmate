@@ -46,5 +46,14 @@ anchor run test2
 ![alt text](https://github.com/maars202/solmate/blob/main/imgs/anchorTestResult.png)
 
 
-After the test have been run, it will generate logs related to the program you have deployed on the solana local testnet in terminal #4 and terminal #2.
+After the test have been run, it will generate logs related to the program you have deployed on the solana local testnet in terminal #2.
+
+In terminal #4:
+To start react frontend to interact with counter struct in solana program, run:
+```
+cd frontend
+npm start
+```
+
+
 
