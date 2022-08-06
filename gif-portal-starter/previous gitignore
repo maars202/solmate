@@ -1,0 +1,10 @@
+node_modules
+.DS_STORE
+
+mysolanaapp/.anchor
+mysolanaapp/.DS_Store
+mysolanaapp/target
+mysolanaapp/**/*.rs.bk
+mysolanaapp/node_modules
+
+mysolanaapp/app/node_modules
