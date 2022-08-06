@@ -21,7 +21,7 @@ anchor build
 anchor deploy
 ```
 Take note of programId displayed:
-![alt text](https://github.com/maars202/solana-voting/blob/main/solana-voting-programs/imgs/deployedProgramId.png)
+![alt text](https://github.com/maars202/solmate/blob/main/imgs/deployedProgramId.png)
 
 Place programId in solana-voting-programs/programs/solana-voting/src/lib.rs in line 7:
 ```
@@ -43,7 +43,8 @@ Go back to Terminal #3:
 anchor run test2
 ```
 
-![alt text](https://github.com/maars202/solana-voting/blob/main/solana-voting-programs/imgs/anchorTestResult.png)
+![alt text](https://github.com/maars202/solmate/blob/main/imgs/anchorTestResult.png)
+
 
 After the test have been run, it will generate logs related to the program you have deployed on the solana local testnet in terminal #4 and terminal #2.
 
