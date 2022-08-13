@@ -7,15 +7,23 @@ const NFT_portfolio = () => {
   const [nfts, setcurrData1] = useState([]);
 
   function getNFT() {
+    var data = JSON.stringify({
+      ownerKey: "9GBTns7DZSZzXYAfxgmXxqCZZgTQCvF6uKbvzohF2Xbx",
+    });
+
     var config = {
       method: "get",
-      url: "https://turbo-octo-enigma.herokuapp.com/getNFTbyOwner?ownerKey=9GBTns7DZSZzXYAfxgmXxqCZZgTQCvF6uKbvzohF2Xbx",
-      headers: {},
+      url: "http://localhost:5000/getNFTbyOwner?ownerKey=9GBTns7DZSZzXYAfxgmXxqCZZgTQCvF6uKbvzohF2Xbx",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: data,
     };
 
     axios(config)
       .then(function (response) {
         console.log(JSON.stringify(response.data));
+        setcurrData1(response.data);
       })
       .catch(function (error) {
         console.log(error);
@@ -39,31 +47,29 @@ const NFT_portfolio = () => {
   }, []);
 
   const nfts_processed = getchunks(nfts);
+  console.log(nfts_processed[0])
 
-    return(
-      <div>Hello</div>
-    );
-  // return (
-  //   <div className="col-8 col-md-8">
-  //     <div style={{ display: "flex", flexDirection: "column" }}>
-  //       {nfts_processed.map((tiny_chunk, index) => {
-  //         // console.log(tiny_chunk);
-  //         return (
-  //           <div style={{ display: "flex", flexDirection: "row" }}>
-  //             {tiny_chunk.map((item2, index2) => {
-  //               console.log("this is the item", item2, index2);
-  //               return (
-  //                 <div>
-  //                   <ActionAreaCard props={item2} />
-  //                 </div>
-  //               );
-  //             })}
-  //           </div>
-  //         );
-  //       })}
-  //     </div>
-  //   </div>
-  // );
+  return (
+    <div className="col-8 col-md-8">
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        {nfts_processed.map((tiny_chunk, index) => {
+          // console.log(tiny_chunk);
+          return (
+            <div style={{ display: "flex", flexDirection: "row" }}>
+              {tiny_chunk.map((item2, index2) => {
+                console.log("this is the item", item2, index2);
+                return (
+                  <div>
+                    <ActionAreaCard props={item2} />
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default NFT_portfolio;

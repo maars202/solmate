@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './pages/home.js';
-import NFT_portfolio from './pages/NFT_portfolio';
-// import NFT_portfolio from "./pages/NFT_lookup";
+// import NFT_portfolio from './pages/NFT_portfolio';
+import NFT_portfolio from "./pages/NFT_lookup";
 // import ItemExampleHeaders from './pages/NFT_Viewer'
 
 // var cors = require("cors");
