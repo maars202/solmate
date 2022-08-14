@@ -19,7 +19,7 @@ use anchor_lang::solana_program::system_program;
 use borsh::{BorshDeserialize, BorshSerialize};
 use std::iter::repeat;
 
-declare_id!("3NoSeAgxLJk3WAaFhZkiXXoYmiHPSLVLoaLRSxUoDj4b");
+declare_id!("6SYHt3jfBZWy9nywDt45yDU1mM8aFucnGgsNM5uTJn6i");
 
 #[program]
 mod mysolanaapp {
