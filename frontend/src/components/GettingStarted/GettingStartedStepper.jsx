@@ -22,6 +22,12 @@ const steps = [
         cardTitle: 'Get Excited',
         cardContent: 'Gear up for invitations to events catered to your liking, through the NFTs you own. As your commits to a certain brand, artist, or creator grow, so will your NFTs.'
     },
+    // {
+    //     collateral: <GettingStartedStep3 />,
+    //     cardTitle: 'Get Excited 2',
+    //     cardContent: 'Gear up for invitations to events catered to your liking, through the NFTs you own. As your commits to a certain brand, artist, or creator grow, so will your NFTs.'
+    // },
+
 ]
 
 const GettingStartedStepper = () => {
@@ -45,7 +51,7 @@ const GettingStartedStepper = () => {
     };
 
     const handleProceed = () => {
-        navigate('/home')
+        navigate('/wallet')
     }
 
     const renderHorizontalStepper = () => {
@@ -71,6 +77,7 @@ const GettingStartedStepper = () => {
                     onClick={activeStep === steps.length - 1 ? handleProceed : handleNext}
                     variant='contained'
                     sx={{ width: '100%' }}>
+                        {/* if its not the last page then it should be get started as button label: */}
                     {activeStep === steps.length - 1 ? 'Get Started' : 'Next'}
                 </Button>
             </Box>

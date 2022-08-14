@@ -10,6 +10,10 @@ import {
 import App from './App';
 import GettingStartedPage from './pages/GettingStartedPage';
 import { ThemeProvider } from '@mui/material/styles';
+import Wallet from './pages/WalletPage';
+import Nftprofile from './pages/Nftprofile';
+import Collection from './pages/Collection';
+
 import Theme from './theme';
 
 ReactDOM.render(
@@ -19,6 +23,9 @@ ReactDOM.render(
         <Routes>
           <Route path="/" element={<GettingStartedPage />}/>
           <Route path="home" element={<App />} />
+          <Route path="wallet" element={<Wallet />} />
+          <Route path="collection" element={<Collection />} />
+          <Route path="nftprofile" element={<Nftprofile />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

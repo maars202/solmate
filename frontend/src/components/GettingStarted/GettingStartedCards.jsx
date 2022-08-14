@@ -15,6 +15,7 @@ const GettingStartedCards = ({ cardData }) => {
             </Box>
             <Box display='flex' alignItems='center'  m={3}>
                 <Typography variant='body1' textAlign='center' color='text.primary'>
+                    
                     {cardData?.cardContent}
                 </Typography>
             </Box>
