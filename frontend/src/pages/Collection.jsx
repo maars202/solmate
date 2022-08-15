@@ -5,22 +5,16 @@ import Theme from "../theme";
 import QrCodeIcon from "@mui/icons-material/QrCode";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
-import ActionAreaCard from "./actionAreaCard";
+import ActionAreaCard from "../components/Collection/actionAreaCard";
 
 const Collection = () => {
   const navigate = useNavigate();
-
-  // const handleSkip = () => {
-  //   navigate("/home");
-  // };
-
 
   return (
     <ThemeProvider theme={Theme}>
       <Box
         display="flex"
         flexDirection="column"
-        // justifyContent="center"
         sx={{
           backgroundColor: "background.default",
           position: "fixed",

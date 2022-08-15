@@ -2,21 +2,22 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, ThemeProvider, Typography } from "@mui/material";
 import Theme from "../theme";
-import QrCodeIcon from "@mui/icons-material/QrCode";
-// import GettingStartedStepper from "../components/GettingStarted/GettingStartedStepper";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import NameCard from "../components/NftProfile/nameCard";
+import ValueCard from "../components/NftProfile/valueCard";
+import LevelCard from "../components/NftProfile/levelCard";
 
-const Collection = () => {
+const Nftprofile = () => {
   const navigate = useNavigate();
 
-  // const handleSkip = () => {
-  //   navigate("/home");
-  // };
+  const goBack = () => {
+    navigate("/collection");
+  };
   return (
     <ThemeProvider theme={Theme}>
       <Box
         display="flex"
         flexDirection="column"
-        // justifyContent="center"
         sx={{
           backgroundColor: "background.default",
           position: "fixed",
@@ -28,161 +29,68 @@ const Collection = () => {
           style={{
             // borderRadius: "5px",
             color: "white",
-            width: "99%",
+            width: "97%",
             height: "8%",
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
-            // textAlign: "center",
           }}
         >
-          <div></div>
-          <div></div>
-          <p>Pokemaniac.sol</p>
           <div
             style={{
               padding: "15px",
             }}
           >
-            <QrCodeIcon />
+            <ArrowBackIosNewIcon onClick={()=>{goBack()}}/>
           </div>
+          <p>Pokemaniac.sol</p>
+          <div></div>
+          <div></div>
         </div>
         <div
           style={{
-            color: "white",
-            width: "99%",
-            height: "5%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            textAlign: "center",
-          }}
-        >
-          NFTs
-        </div>
-        <div
-          style={{
-
             color: "white",
             width: "99%",
             height: "40%",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
-
-          {/* <img src={"../assets/nftprofile/Card.png"} style={{height: "100px", width: "100px"}}alt="" /> */}
-          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" style={{height: "200px", width: "200px"}}alt="" />
+          <img
+            src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+            style={{ height: "250px", width: "250px" }}
+            alt=""
+          />
         </div>
 
         <div
           style={{
-            // display: "flex",
-            // flexDirection: "column",
             borderRadius: "5px",
             color: "white",
             backgroundColor: "#262625",
-            height: "50%",
+            height: "65%",
             padding: "10px",
-            // justifyContent: "space-between"
           }}
         >
-          <Typography color='text.primary'>Solmate</Typography>
-          
-
-                <div
-                style={{
-                  borderRadius: "5px",
-                  color: "white",
-                  height: "20%",
-                  display: "flex",
-                  flexDirection: "row",
-                  textAlign: "center",
-                  backgroundColor: "#313131",
-                  marginTop: "20px"
-
-                }}
-                >
-
-                  <div style={{ width: "20%"}}></div>
-                  <div style={{textAlign: "center"}}>
-                    <p>Bulbasaur </p>
-                    <p>GameFreak</p>
-                  </div>
-
-              </div>
-
-
-              <div
-                style={{
-                  borderRadius: "5px",
-                  color: "white",
-                  height: "60%",
-                  display: "flex",
-                  flexDirection: "column",
-                  textAlign: "center",
-                  backgroundColor: "#313131",
-                  marginTop: "20px",
-
-                }}
-                >
-
-                  <div style={{display: "flex",
-                flexDirection: "row", justifyContent: "space-between"}}>
-                        <div style={{width: "50%", 
-                      display: "flex",
-                      flexDirection: "column",}}>
-                          <div>value</div>
-                          <div>10 SOL</div>
-                      </div>
-
-                      <div style={{width: "50%", 
-                      display: "flex",
-                      flexDirection: "column",}}>
-                          <div>Level</div>
-                          <div>9</div>
-                      </div>
-
-                      
-                        
-                  </div>
-
-                  <div style={{ display: "flex",
-                flexDirection: "row", justifyContent: "space-between"}}>
-                        <div style={{ width: "50%", 
-                      display: "flex",
-                      flexDirection: "column",}}>
-                          <div>Tier</div>
-                          <div>Basic</div>
-                      </div>
-
-                      <div style={{ width: "50%", 
-                      display: "flex",
-                      flexDirection: "column",}}>
-                          <div>Next Evolution</div>
-                          <div>10</div>
-                      </div>
-
-                      
-                        
-                  </div>
-
-
-                  
-
-              </div>
-
-
-              
-
-
-
-
-
-          
+          <Typography color="text.primary">Solmate</Typography>
+          <p></p>
+          <NameCard />
+          <p></p>
+          <div
+            style={{
+              color: "white",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+              backgroundColor: "#313131",
+            }}
+          >
+            <ValueCard />
+            <LevelCard />
+          </div>
         </div>
       </Box>
     </ThemeProvider>
   );
 };
 
-export default Collection;
+export default Nftprofile;
