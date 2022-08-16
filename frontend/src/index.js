@@ -15,7 +15,7 @@ import Nftprofile from './pages/NftProfile';
 import Collection from './pages/Collection';
 import QRcode from './pages/QrcodePage';
 import VerifiedPage from './pages/VerifiedPage';
-
+import EventDetails from './pages/EventDetails';
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from './theme';
 
@@ -33,6 +33,7 @@ ReactDOM.render(
             <Route path="nftprofile" element={<Nftprofile />} />
             <Route path="qrcode" element={<QRcode />} />
             <Route path="verified" element={<VerifiedPage />} />
+            <Route path='event' element={<EventDetails/>} />
           </Routes>
         </BrowserRouter>
       </Box>
