@@ -16,6 +16,7 @@ import Collection from './pages/Collection';
 import QRcode from './pages/QrcodePage';
 import VerifiedPage from './pages/VerifiedPage';
 import EventDetails from './pages/EventDetails';
+import ApprovalPage from './pages/ApprovalPage';
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from './theme';
 
@@ -34,6 +35,7 @@ ReactDOM.render(
             <Route path="qrcode" element={<QRcode />} />
             <Route path="verified" element={<VerifiedPage />} />
             <Route path='event' element={<EventDetails/>} />
+            <Route path='approval' element={<ApprovalPage/>}/>
           </Routes>
         </BrowserRouter>
       </Box>
