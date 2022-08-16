@@ -1,7 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Grid, Typography, IconButton } from "@mui/material";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import TokenCard from "../components/EventDetails/tokenCard";
 import EventCard from "../components/EventDetails/eventCard";
@@ -9,9 +8,9 @@ import EventCard from "../components/EventDetails/eventCard";
 const EventDetails = () => {
   const navigate = useNavigate();
 
-  const goBack = () => {
-    navigate("/home");
-  };
+    const goForward = () => {
+      navigate("/approval");
+    };
 
   return (
     <Box
@@ -43,7 +42,7 @@ const EventDetails = () => {
 
         <Grid item xs={3}>
           <Box mt={2.5} mr={2} display="flex" justifyContent="flex-end">
-            <IconButton onClick={goBack}>
+            <IconButton onClick={goForward}>
               <ArrowForwardIosIcon sx={{ color: "text.primary" }} />
             </IconButton>
           </Box>

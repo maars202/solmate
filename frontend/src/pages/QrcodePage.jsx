@@ -1,6 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Button, ThemeProvider, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  IconButton,
+  ThemeProvider,
+} from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import Theme from "../theme";
 import logo from '../assets/qrcode/QR_Code.svg';
@@ -29,37 +35,34 @@ const QRcode = () => {
             height: "100%",
           }}
         >
-          <div
-            style={{
-              // borderRadius: "5px",
-              color: "white",
-              width: "97%",
-              height: "8%",
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-            }}
-          >
-            <div
-              style={{
-                padding: "15px",
-              }}
-            >
-              <ArrowBackIosNewIcon
-                onClick={() => {
-                  goBack();
-                }}
-              />
-            </div>
-            <div></div>
-            <div></div>
-            <p>Verification</p>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <Grid container>
+            <Grid item xs={3}>
+              <Box mt={2.5} mr={2} display="flex" justifyContent="flex-start">
+                <IconButton onClick={goBack}> 
+                <ArrowBackIosNewIcon sx={{ color: "text.primary" }} />
+                </IconButton>
+              </Box>
+            </Grid>
+
+            <Grid item xs={6}>
+              <Box mt={3} textAlign="center">
+                <Typography variant="h6" color="text.primary">
+                  Approved
+                </Typography>
+              </Box>
+            </Grid>
+
+            <Grid item xs={3}>
+              <Box
+                mt={2.5}
+                mr={2}
+                display="flex"
+                justifyContent="flex-end"
+              ></Box>
+            </Grid>
+
+            <Grid item xs={3}></Grid>
+          </Grid>
           <div
             style={{
               color: "white",
