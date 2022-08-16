@@ -24,7 +24,7 @@ const WalletPage = () => {
       const resp = await provider.connect();
       console.log(resp.publicKey.toString());
       if (resp.publicKey.toString()) {
-        navigate('/collection')
+        navigate('/home')
       }
     } catch (err) {
       // { code: 4001, message: 'User rejected the request.' }

@@ -75,12 +75,11 @@ const Collection = () => {
             <CollectionCard />
           </Box>
         </Grid>
-        <Grid item xs={6}>
+        {/* <Grid item xs={6}>
           <Box>
             <CollectionCard />
           </Box>
-          {/* </div> */}
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );
