@@ -76,7 +76,7 @@ const Nftprofile = () => {
             <ValueCard nftValue={cardData?.value} nftTier={cardData?.tier}/>
           </Grid>
           <Grid item xs={6}>
-            <LevelCard />
+            <LevelCard level={cardData?.level} nextEvolution={cardData?.nextEvolution}/>
           </Grid>
         </Grid>
 

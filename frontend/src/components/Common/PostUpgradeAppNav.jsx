@@ -43,7 +43,7 @@ function a11yProps(index) {
 const appNavComponents = [
   {
     label: 'NFTs',
-    view: <Collection />
+    view: <PostUpgradeCollectionPage />
   },
   {
     label: 'Marketplace',
@@ -51,7 +51,7 @@ const appNavComponents = [
   }
 ]
 
-export default function AppNav() {
+export default function PostUpgradeAppNav() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {

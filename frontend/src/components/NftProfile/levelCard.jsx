@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function LevelCard() {
+export default function LevelCard({ level, nextEvolution }) {
   const navigate = useNavigate();
 
   const goToProfile = () => {
@@ -35,7 +35,7 @@ export default function LevelCard() {
             Level
           </Typography>
           <Typography variant="body2" color="#FFFFFF" font="17px">
-            9
+            {level}
           </Typography>
           <div>
             <p></p>
@@ -48,7 +48,7 @@ export default function LevelCard() {
             Next Evolution
           </Typography>
           <Typography variant="body2" color="#FFFFFF" font="17px">
-            10
+            {nextEvolution}
           </Typography>
         </CardContent>
       </CardActionArea>

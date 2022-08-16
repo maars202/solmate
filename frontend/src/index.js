@@ -17,6 +17,7 @@ import QRcode from './pages/QrcodePage';
 import VerifiedPage from './pages/VerifiedPage';
 import EventDetails from './pages/EventDetails';
 import ApprovalPage from './pages/ApprovalPage';
+import PostUpgradeApp from './pages/PostUpgradeApp';
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from './theme';
 
@@ -36,6 +37,7 @@ ReactDOM.render(
             <Route path="verified" element={<VerifiedPage />} />
             <Route path='event' element={<EventDetails/>} />
             <Route path='approval' element={<ApprovalPage/>}/>
+            <Route path='upgraded_collection' element={<PostUpgradeApp/>}/>
           </Routes>
         </BrowserRouter>
       </Box>
