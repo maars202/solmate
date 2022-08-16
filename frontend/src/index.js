@@ -1,37 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { Box } from '@mui/material';
 import {
   BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
 
+// import GettingStartedPage from './pages/GettingStartedPage';
 import App from './App';
-import GettingStartedPage from './pages/GettingStartedPage';
-import { ThemeProvider } from '@mui/material/styles';
-import Wallet from './pages/WalletPage';
+import WalletPage from './pages/WalletPage';
 import Nftprofile from './pages/NftProfile';
 import Collection from './pages/Collection';
 import QRcode from './pages/QrcodePage';
 import VerifiedPage from './pages/VerifiedPage';
 
+import { ThemeProvider } from '@mui/material/styles';
 import Theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<GettingStartedPage />} />
-          <Route path="home" element={<App />} />
-          <Route path="wallet" element={<Wallet />} />
-          <Route path="collection" element={<Collection />} />
-          <Route path="nftprofile" element={<Nftprofile />} />
-          <Route path="qrcode" element={<QRcode />} />
-          <Route path="verified" element={<VerifiedPage />} />
-        </Routes>
-      </BrowserRouter>
+      <Box sx={{ backgroundColor: 'background.default', height: '100vh', minHeight: '100vh' }}>
+        <BrowserRouter>
+          <Routes>
+            {/* <Route path="/" element={<GettingStartedPage />} /> */}
+            <Route path="wallet" element={<WalletPage />} />
+            <Route path="home" element={<App />} />
+            <Route path="collection" element={<Collection />} />
+            {/* <Route path="collection" element={<Marketplace />} /> */}
+            <Route path="nftprofile" element={<Nftprofile />} />
+            <Route path="qrcode" element={<QRcode />} />
+            <Route path="verified" element={<VerifiedPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Box>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

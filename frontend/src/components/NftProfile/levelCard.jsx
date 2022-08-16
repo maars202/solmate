@@ -17,7 +17,7 @@ export default function LevelCard() {
   return (
     <Card
       sx={{
-        maxWidth: 150,
+        width: '100%',
         backgroundColor: "#313131",
         border: "1px solid rgba(255, 255, 255, 0.15)",
       }}

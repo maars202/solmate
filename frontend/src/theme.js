@@ -22,18 +22,27 @@ const Theme = createTheme({
         'cursive'
       ].join(',')
     },
+    h6: {
+      fontFamily: [
+        'Berkshire Swash',
+        'cursive'
+      ].join(',')
+    },
   },
+
   palette: {
     background: {
       default: '#111827'
     },
     text: {
-      primary: '#ffffff'
+      primary: '#ffffff',
+      secondary: 'rgba(255, 255, 255, 0.65)'
     },
     primary: {
       main: deepPurple[300],
     },
-  },
+    divider: 'rgba(255, 255, 255, 0.65)'
+  }
   
 });
 

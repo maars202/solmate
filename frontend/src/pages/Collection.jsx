@@ -1,127 +1,63 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Button, ThemeProvider, Typography } from "@mui/material";
-import Theme from "../theme";
-import QrCodeIcon from "@mui/icons-material/QrCode";
+import { Box, Grid } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
-import ActionAreaCard from "../components/Collection/actionAreaCard";
+import CollectionCard from "../components/Collection/CollectionCard";
+import CollectionFilter from "../components/Collection/CollectionFilter";
 
 const Collection = () => {
   const navigate = useNavigate();
 
   return (
-    <ThemeProvider theme={Theme}>
-      <Box
-        display="flex"
-        flexDirection="column"
-        sx={{
-          backgroundColor: "background.default",
-          position: "fixed",
-          width: "100%",
-          height: "100%",
+    <Box>
+      {/* <div
+        style={{
+          // borderRadius: "5px",
+          color: "white",
+          width: "97%",
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
         }}
       >
-        <div
+        <p
           style={{
-            // borderRadius: "5px",
-            color: "white",
-            width: "97%",
-            height: "8%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
+            paddingLeft: "10px",
+            fontFamily: "Poppins",
+            fontSize: "14px",
           }}
         >
-          <div></div>
-          <div></div>
-          <p>Pokemaniac.sol</p>
-          <div
-            style={{
-              padding: "15px",
-            }}
-          >
-            <QrCodeIcon />
-          </div>
-        </div>
+          Owned
+        </p>
         <div
           style={{
-            // border: "1px solid white",
-            // borderRadius: "1px",
-            borderBottom: "1px solid rgba(255, 255, 255, 0.15)",
-            color: "white",
-            width: "100%",
-            height: "4%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            textAlign: "center",
+            paddingTop: "12px",
           }}
         >
-          NFTs
+          <ArrowDropDownIcon />
         </div>
+
         <div
           style={{
-            // borderRadius: "5px",
-            color: "white",
-            width: "97%",
-            height: "8%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
+            padding: "15px",
           }}
         >
-          <p
-            style={{
-              paddingLeft: "10px",
-              fontFamily: "Poppins",
-              fontSize: "14px",
-            }}
-          >
-            Owned
-          </p>
-          <div
-            style={{
-              paddingTop: "12px",
-            }}
-          >
-            <ArrowDropDownIcon />
-          </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div
-            style={{
-              padding: "15px",
-            }}
-          >
-            <AutoAwesomeMosaicIcon />
-          </div>
         </div>
-        <div
+      </div> */}
+      <Grid container mb={3} alignItems='center'>
+        <Grid item xs={6}>
+          <Box>
+            <CollectionFilter />
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <Box display='flex' justifyContent='flex-end' alignItems='center'>
+              <AutoAwesomeMosaicIcon sx={{ color: 'text.primary' }}/>
+          </Box>
+        </Grid>
+      </Grid>
+      {/* <div
           style={{
             // border: "1px solid white",
             // borderRadius: "1px",
@@ -132,11 +68,21 @@ const Collection = () => {
             display: "flex",
             flexDirection: "row",
           }}
-        >
-          <ActionAreaCard />
-        </div>
-      </Box>
-    </ThemeProvider>
+        > */}
+      <Grid container spacing={2}>
+        <Grid item xs={6}>
+          <Box>
+            <CollectionCard />
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <Box>
+            <CollectionCard />
+          </Box>
+          {/* </div> */}
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 

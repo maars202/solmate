@@ -1,15 +1,14 @@
 import React from 'react';
-import { Typography } from '@mui/material';
+import { Box } from '@mui/material';
+import AppHeader from './components/Common/AppHeader';
+import AppNav from './components/Common/AppNav';
 
 const App = () => {
   return (
-    <div>
-        <Typography variant='h1'>App</Typography>
-        <Typography variant='h2'>App</Typography>
-        <Typography variant='h3'>App</Typography>
-        <Typography variant='h4'>App</Typography>
-        <Typography variant='h5'>App</Typography>
-    </div>
+    <Box>
+      <AppHeader />
+      <AppNav />
+    </Box>
   )
 }
 
