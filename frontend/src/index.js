@@ -18,6 +18,7 @@ import VerifiedPage from './pages/VerifiedPage';
 import EventDetails from './pages/EventDetails';
 import ApprovalPage from './pages/ApprovalPage';
 import PostUpgradeApp from './pages/PostUpgradeApp';
+import PostUpgradeNftProfile from './pages/PostUpgradeNftProfile';
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from './theme';
 
@@ -33,6 +34,7 @@ ReactDOM.render(
             <Route path="collection" element={<Collection />} />
             {/* <Route path="collection" element={<Marketplace />} /> */}
             <Route path="nftprofile" element={<Nftprofile />} />
+            <Route path="upgraded_nftprofile" element={<PostUpgradeNftProfile />} />
             <Route path="qrcode" element={<QRcode />} />
             <Route path="verified" element={<VerifiedPage />} />
             <Route path='event' element={<EventDetails/>} />

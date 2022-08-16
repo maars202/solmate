@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
-import CollectionCard from "../components/Collection/CollectionCard";
+import PostUpgradeCollectionCard from "../components/Collection/PostUpgradeCollectionCard";
 import CollectionFilter from "../components/Collection/CollectionFilter";
 import bulbasaurImage from "../assets/nftprofile/Bulbasaur.png"
 import ivysaurImage from "../assets/nftprofile/Ivysaur.png"
@@ -45,7 +45,7 @@ const PostUpgradeCollectionPage = () => {
                         collectionData.map((cardData, index) => (
                             <Grid item xs={6}>
                                 <Box>
-                                    <CollectionCard cardData={cardData} />
+                                    <PostUpgradeCollectionCard cardData={cardData} />
                                 </Box>
                             </Grid>
 

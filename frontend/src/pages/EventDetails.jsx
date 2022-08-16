@@ -4,6 +4,7 @@ import { Box, Grid, Typography, IconButton } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import TokenCard from "../components/EventDetails/tokenCard";
 import EventCard from "../components/EventDetails/eventCard";
+import EventDetail from "../assets/events/EventDetail.png"
 
 const EventDetails = () => {
   const navigate = useNavigate();
@@ -56,11 +57,12 @@ const EventDetails = () => {
           color: "white",
           height: "40%",
           textAlign: "center",
+          padding: "15px"
         }}
       >
         <img
-          src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
-          style={{ height: "250px", width: "250px" }}
+          src={EventDetail}
+          style={{ height: "220px", width: "220px" }}
           alt=""
         />
       </div>

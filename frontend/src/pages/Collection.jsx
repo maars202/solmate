@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
@@ -37,7 +36,6 @@ const collectionData = [
 ]
 
 const Collection = () => {
-  const navigate = useNavigate();
 
   return (
     <Box>
