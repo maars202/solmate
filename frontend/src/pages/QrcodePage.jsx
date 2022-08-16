@@ -10,7 +10,7 @@ const QRcode = () => {
     const navigate = useNavigate();
 
       const goBack = () => {
-        navigate("/collection");
+        navigate("/home");
       };
 
       const goForward = () => {
