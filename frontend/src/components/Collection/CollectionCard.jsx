@@ -3,14 +3,17 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@
 import { useTheme } from '@mui/material/styles';
 import { useNavigate } from "react-router-dom";
 
-export default function CollectionCard() {
+export default function CollectionCard({ cardData }) {
   const theme = useTheme();
   const navigate = useNavigate();
 
   const goToNftProfile = () => {
-    navigate("/nftprofile");
+    navigate("/nftprofile", {
+      state: {
+        cardData
+      }
+    });
   }
-
 
   return (
     <Box>
@@ -24,15 +27,15 @@ export default function CollectionCard() {
           <CardMedia
             component="img"
             height="150"
-            image="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
+            image={cardData.collateral}
             alt=""
           />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              Bulbasaur
+              {cardData.name}
             </Typography>
             <Typography variant="body2" color="text.primary">
-              #01
+              #{cardData.id}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Value
@@ -54,7 +57,7 @@ export default function CollectionCard() {
                 style={{paddingRight:"5px"}}
               />
               <Typography variant="body2" color="text.primary">
-                10
+                {cardData.value}
               </Typography>
             </div>
           </CardContent>

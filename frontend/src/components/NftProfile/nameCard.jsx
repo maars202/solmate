@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function NameCard() {
+export default function NameCard({ nftName }) {
   // const navigate = useNavigate();
 
   // const goToProfile = () => {
@@ -27,7 +27,7 @@ export default function NameCard() {
       <CardActionArea>
         <CardContent>
           <Typography variant="body2" color="#FFFFFF" fontSize="17px">
-            Bulbasaur
+            {nftName}
           </Typography>
           <Typography
             variant="body2"

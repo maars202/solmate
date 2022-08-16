@@ -18,7 +18,7 @@ const AppHeader = () => {
                     <Grid item xs={3} />
                     <Grid item xs={6}>
                         <Box mt={3} textAlign='center'>
-                            <Typography variant="h6" color='text.primary'>
+                            <Typography variant="h6" color='text.primary'> 
                                 Pokemaniac.sol
                             </Typography>
                         </Box>

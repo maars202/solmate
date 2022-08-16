@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function ValueCard() {
+export default function ValueCard({ nftValue, nftTier }) {
   const navigate = useNavigate();
 
   const goToProfile = () => {
@@ -35,7 +35,7 @@ export default function ValueCard() {
             Value
           </Typography>
           <Typography variant="body2" color="#FFFFFF" font="17px">
-            10 SOL
+            {nftValue} SOL
           </Typography>
           <div>
             <p></p>
@@ -48,7 +48,7 @@ export default function ValueCard() {
             Tier
           </Typography>
           <Typography variant="body2" color="#FFFFFF" font="17px">
-            Basic
+            {nftTier}
           </Typography>
         </CardContent>
       </CardActionArea>

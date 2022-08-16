@@ -5,9 +5,13 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import NameCard from "../components/NftProfile/nameCard";
 import ValueCard from "../components/NftProfile/valueCard";
 import LevelCard from "../components/NftProfile/levelCard";
+import { useLocation } from "react-router-dom";
 
 const Nftprofile = () => {
+  const params = useLocation();
+  const cardData = params?.state?.cardData;
   const navigate = useNavigate();
+  console.log(params)
 
   const goBack = () => {
     navigate("/home");
@@ -43,19 +47,13 @@ const Nftprofile = () => {
         <Grid item xs={3}></Grid>
       </Grid>
 
-      <div
-        style={{
-          color: "white",
-          height: "40%",
-          textAlign: "center",
-        }}
-      >
+      <Box display='flex' justifyContent='center' m={3}>
         <img
-          src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png"
-          style={{ height: "250px", width: "250px" }}
+          src={cardData.collateral}
+          style={{ height: "250px" }}
           alt=""
         />
-      </div>
+      </Box>
 
       <div
         style={{
@@ -70,12 +68,12 @@ const Nftprofile = () => {
           <Typography variant="h6" color="text.primary">Solmate</Typography>
         </Box>
         <p></p>
-        <NameCard />
+        <NameCard nftName={cardData?.name} />
         <p></p>
 
         <Grid container spacing={2}>
           <Grid item xs={6}>
-            <ValueCard />
+            <ValueCard nftValue={cardData?.value} nftTier={cardData?.tier}/>
           </Grid>
           <Grid item xs={6}>
             <LevelCard />
