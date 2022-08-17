@@ -18,20 +18,20 @@ const collectionData = [
     tier: 'Basic',
     value: 10
   },
-  {
-    id: 2,
-    name: 'Ivysaur',
-    collateral: ivysaurImage,
-    tier: 'Intermediate',
-    value: 20
-  },
-  {
-    id: 3,
-    name: 'Venasaur',
-    collateral: venasaurImage,
-    tier: 'Advanced',
-    value: 30
-  },
+  // {
+  //   id: 2,
+  //   name: 'Ivysaur',
+  //   collateral: ivysaurImage,
+  //   tier: 'Intermediate',
+  //   value: 20
+  // },
+  // {
+  //   id: 3,
+  //   name: 'Venasaur',
+  //   collateral: venasaurImage,
+  //   tier: 'Advanced',
+  //   value: 30
+  // },
 ]
 
 const Collection = () => {

@@ -3,7 +3,8 @@ import { Button, Typography } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 import { Box } from '@mui/material';
 // import { ReactComponent as WalletBackground } from '../assets/walletAssets/walletBackground.svg';
-
+import backgroundImg from "./pexels-anni-roenkae-2156881 2.svg"
+import backgroundImg2 from "./image 4.svg"
 const WalletPage = () => {
   const navigate = useNavigate();
   const getProvider = () => {
@@ -37,8 +38,8 @@ const WalletPage = () => {
   });
 
   return (
-    <Box>
-      <Box display='flex' flexDirection='column' justifyContent='flex-end' mx={3} sx={{ height: '100vh' }}>
+    <Box style={{backgroundImage: `url(${backgroundImg2})`}}>
+      <Box display='flex' flexDirection='column' justifyContent='flex-end' mx={3} sx={{ height: '100vh' }} >
         <Box my={5}>
           <Typography variant='h3' color='text.primary'>Connect Wallet</Typography>
         </Box>
