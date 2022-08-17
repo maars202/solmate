@@ -56,6 +56,18 @@ cd .\frontend\
 npm start
 ````
 
+If you happen to encounter the error as seen below, change the name of '.\src\pages\Nftprofile.jsx'. to '.\src\pages\Nft<b>P</b>rofile.jsx'. with a capital P
+````
+Cannot find file: 'NftProfile.jsx' does not match the corresponding name on disk: '.\src\pages\Nftprofile.jsx'.
+````
+
+Since our application is optimized for iphone SE, when running the application, you would need to first right click on your browser and press inspect. Then at the top of the browser, change the device to iphone SE as seen in the image below
+<p align='center'>
+<img src="imgs/inspect.png" width="500" height="350"/>
+</p>
+
+Alternatively you can also check out our application which is deployed [here](https://solmate.netlify.app/), however you would need to follow the inspect optimization as mentioned in the previous paragraph!
+
 # BUILDERS
 Brought together through fate at one of Solana Summer Camp 2022's workshops, we are a team of young builders and strategists hacking away at a key we believe brands, event organizers, developers, and artists can utilize to engage their community with.
 
