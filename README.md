@@ -34,12 +34,12 @@ The end product is a token gating solution with NFTs that induces customer loyal
 Brought together through fate at one of Solana Summer Camp 2022's workshops, we are a team of young builders and strategists hacking away at a key we believe brands, event organizers, developers, and artists can utilize to engage their community with.
 
 Do feel free to connect with us!
-- Liam Ayathan [[LinkedIn]](https://www.linkedin.com/in/liam-ayathan-046b3816b/)
-- Maaruni Pandithurai [[LinkedIn]](https://www.linkedin.com/in/maaruni/)
-- George Loh [[LinkedIn]](https://www.linkedin.com/in/ying-zhe-george-loh-17756a95/)
-- Rui Xin Oh [[LinkedIn]](https://www.linkedin.com/in/ruixinoh/)
-- Yun Waddy Soe [[LinkedIn]](https://www.linkedin.com/in/yunwaddysoe/)
-- Loh Kok Wee [[LinkedIn]](https://www.linkedin.com/in/loh-kok-wee-59a698142/)
+- Liam Ayathan [[LinkedIn]](https://www.linkedin.com/in/liam-ayathan-046b3816b/) , [[Github]](https://github.com/liam-ayathan)
+- Maaruni Pandithurai [[LinkedIn]](https://www.linkedin.com/in/maaruni/), [[Github]](https://github.com/maars202)
+- George Loh [[LinkedIn]](https://www.linkedin.com/in/ying-zhe-george-loh-17756a95/) , [[Github]](https://github.com/YZLoh)
+- Rui Xin Oh [[LinkedIn]](https://www.linkedin.com/in/ruixinoh/) , [[Github]](https://github.com/nraven721)
+- Yun Waddy Soe [[LinkedIn]](https://www.linkedin.com/in/yunwaddysoe/) , [[Github]](https://github.com/yunsoe)
+- Loh Kok Wee [[LinkedIn]](https://www.linkedin.com/in/loh-kok-wee-59a698142/) , [[Github]](https://github.com/lohkokwee)
 
 [Back to top](#table-of-contents)
 
