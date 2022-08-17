@@ -2,7 +2,7 @@
 
 A blockchain project for Solana's Summer Camp 2022 Hackathon. This project serves as a proof of concept to bring extra use cases to existing NFTs in Token Gating and Evolving NFTs.
 
-We created an simple web application to showcase this concept. Do check it out here! (https://app.netlify.com/sites/solmate/overview)
+We created an simple web application to showcase this concept. Do check it out [here](https://app.netlify.com/sites/solmate/overview)!
 
 // GIF HERE!
 
@@ -13,6 +13,8 @@ We created an simple web application to showcase this concept. Do check it out h
 
 # About
 NFTs have experienced a sharp rise in popularity in the recent years. With Solana overtaking Ethereum's... 
+
+For a better understanding of the project, do check out our pitch deck [here](https://docs.google.com/presentation/d/e/2PACX-1vT4bMDMy_1NUigecJNweBh_VUWENRs-ixwJpuVP_o5N5nndn-Aw8xL8bRgBNq5Rg_v7_OT-0aAOxkKM/pub?start=false&loop=false&delayms=60000&slide=id.g1449db10bc0_0_5).
 
 [Back to top](#table-of-contents)
 
