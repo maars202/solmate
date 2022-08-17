@@ -43,3 +43,5 @@ Do feel free to connect with us!
 
 [Back to top](#table-of-contents)
 
+<img src="imgs/Overview_pic.png" width="600" height="350"/>
+
