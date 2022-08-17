@@ -4,7 +4,7 @@ Our project marries Token Gating with the concept of evolving NFTs to foster bra
 
 For a better understanding of the project, do check out our pitch deck [here](https://docs.google.com/presentation/d/e/2PACX-1vT4bMDMy_1NUigecJNweBh_VUWENRs-ixwJpuVP_o5N5nndn-Aw8xL8bRgBNq5Rg_v7_OT-0aAOxkKM/pub?start=false&loop=false&delayms=60000&slide=id.g1449db10bc0_0_5) and the demo of our application [here](https://drive.google.com/file/d/1tviIHyfpaoS_IGoR_AY8kJnKF4U5xU1Y/view?usp=sharing)!
 
-<img src="imgs/SolMate_Demo_improved.gif" width="400" height="667"/>
+<img src="imgs/SolMate_Demo_improved.gif" width="450" height="667"/>
 
 <img src="imgs/Overview_pic.png" width="700" height="410"/>
 
