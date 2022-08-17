@@ -7,7 +7,7 @@ For a better understanding of the project, do check out our pitch deck [here](ht
 # Table of Contents
 - [About](#about)
 - [Usage](#usage)
-- [The BUILDLERS](#The BUIDLERS)
+- [BUILDLERS](#builders)
 
 # About
 As it stands, current Token Gating solutions only serve as one off passes to events and gated digital content, essentially behaving as repurposed physical tickets. How can we leverage on the underlying technology behind NFTs to turn them into loyalty cards which can help brands build stronger connections with their community as well as reward users for their commmitment and loyalty?
@@ -17,8 +17,6 @@ Our solution solmate aims to bridge Token Gating with the concept of Evolving NF
 We believe that this concept would help to make NFT ownership and Token Gating a more interactive experience which will further encourage users to support their favourite brands, and onboard more people into Web 3.0!
 
 For a deeper breakdown of our solution, please refer to our pitch deck!
-
-[Back to top](#table-of-contents)
 
 # Usage
 Our web app demonstrates the typical user flow as a proof of concept. The user flow is as follows:
@@ -32,9 +30,7 @@ Our web app demonstrates the typical user flow as a proof of concept. The user f
 
 The end product is a token gating solution with NFTs that induces customer loyalty through inherent rewards by participating in more events.
 
-[Back to top](#table-of-contents)
-
-# The BUIDLERS
+# BUILDERS
 Brought together through fate at one of Solana Summer Camp 2022's workshops, we are a team of young builders and strategists hacking away at a key we believe brands, event organizers, developers, and artists can utilize to engage their community with.
 
 Do feel free to connect with us!
