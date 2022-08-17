@@ -7,7 +7,8 @@ const AppHeader = () => {
     const navigate = useNavigate();
 
     const handleQrClick = () => {
-        navigate("/qrcode");
+        // go to qrcode:
+        // navigate("/qrcode");
         return
     }
 

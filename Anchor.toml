@@ -1,13 +1,14 @@
-[programs.localnet]
-mysolanaapp = "6SYHt3jfBZWy9nywDt45yDU1mM8aFucnGgsNM5uTJn6i"
+[programs.devnet]
+mysolanaapp = "J69SAMv9PZSDHGk87CdAnN8AKAsJNLzCzkCh4z2xWp5T"
 
 [registry]
 url = "https://anchor.projectserum.com"
 
 [provider]
-cluster = "localnet"
-wallet = "/Users/kokwee/.config/solana/id.json"
+cluster = "devnet"
+wallet = "/Users/maarunipandithurai/.config/solana/id.json"
 
 [scripts]
-test = "yarn run mocha -t 1000000 tests/"
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+test1 = "yarn run mocha -t 1000000 tests/"
 test2 = "anchor build && anchor deploy && anchor test"
