@@ -4,8 +4,6 @@ A blockchain project for Solana's Summer Camp 2022 Hackathon. This project serve
 
 We created an simple web application to showcase this concept. Do check it out [here](https://app.netlify.com/sites/solmate/overview)!
 
-// GIF HERE!
-
 # Table of Contents
 - [About](#about)
 - [Usage](#usage)
