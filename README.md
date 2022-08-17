@@ -2,16 +2,13 @@
 
 Our project marries Token Gating with the concept of evolving NFTs to foster brand loyalty.
 
-For a better understanding of the project, do check out our pitch deck [here](https://docs.google.com/presentation/d/e/2PACX-1vT4bMDMy_1NUigecJNweBh_VUWENRs-ixwJpuVP_o5N5nndn-Aw8xL8bRgBNq5Rg_v7_OT-0aAOxkKM/pub?start=false&loop=false&delayms=60000&slide=id.g1449db10bc0_0_5) and the demo of our application [here](https://drive.google.com/file/d/1tviIHyfpaoS_IGoR_AY8kJnKF4U5xU1Y/view?usp=sharing)!
-
-<img src="imgs/SolMate_Demo_improved2.gif" width="390" height="520"/>
-
-<img src="imgs/Overview_pic.png" width="700" height="410"/>
+For a better understanding of the project, do check out our pitch deck [here](https://docs.google.com/presentation/d/e/2PACX-1vT4bMDMy_1NUigecJNweBh_VUWENRs-ixwJpuVP_o5N5nndn-Aw8xL8bRgBNq5Rg_v7_OT-0aAOxkKM/pub?start=false&loop=false&delayms=60000&slide=id.p) and the demo of our application [here](https://drive.google.com/file/d/1tviIHyfpaoS_IGoR_AY8kJnKF4U5xU1Y/view?usp=sharing)!
 
 # Table of Contents
 - [About](#about)
-- [Usage](#usage)
-- [BUILDLERS](#builders)
+- [Walkthrough](#walkthrough)
+- [Technical Overview](#technical-overview)
+- [BUILDERS](#builders)
 
 # About
 As it stands, current Token Gating solutions only serve as one off passes to events and gated digital content, essentially behaving as repurposed physical tickets. How can we leverage on the underlying technology behind NFTs to turn them into loyalty cards which can help brands build stronger connections with their community as well as reward users for their commmitment and loyalty?
@@ -22,17 +19,26 @@ We believe that this concept would help to make NFT ownership and Token Gating a
 
 For a deeper breakdown of our solution, please refer to our pitch deck!
 
-# Usage
+# Walkthrough
 Our web app demonstrates the typical user flow as a proof of concept. The user flow is as follows:
 
 1. The user is introduced to the app in our getting started screens
 2. The user connects his/her wallet
 3. Users are introduced to existing NFTs in their wallet
-4. On clicking the QR Code icon at the top right, users are rouoted to the screen containing a QR Code associated with their wallet
+4. On clicking the QR Code icon at the top right, users are routed to the screen containing a QR Code associated with their wallet
 5. On verification of this QR Code, a signal is given to both the user and the verifier that the user indeed has the NFT ticket and would be allowed into the venue
 6. Behind the scenes, the NFT's counter increases and evolves when the condition stipulated by the organiser is met
 
-The end product is a token gating solution with NFTs that induces customer loyalty through inherent rewards by participating in more events.
+The end product is a token gating solution with NFTs that induces customer loyalty through inherent rewards by participating in more events. Below is a walkthrough video of our application!
+
+<p align='center'>
+<img src="imgs/SolMate_Demo_improved2.gif" width="440" height="520"/>
+</p>
+
+# Technical Overview
+<p align='center'>
+<img src="imgs/Overview_pic.png" width="1000" height="585"/>
+</p>
 
 # BUILDERS
 Brought together through fate at one of Solana Summer Camp 2022's workshops, we are a team of young builders and strategists hacking away at a key we believe brands, event organizers, developers, and artists can utilize to engage their community with.
