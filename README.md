@@ -1,18 +1,22 @@
 # SolMate
 
-A blockchain project for Solana's Summer Camp 2022 Hackathon. This project serves as a proof of concept to bring extra use cases to existing NFTs in Token Gating and Evolving NFTs.
+Our project marries Token Gating with the concept of evolving NFTs to foster brand loyalty.
 
-We created an simple web application to showcase this concept. Do check it out [here](https://app.netlify.com/sites/solmate/overview)!
+For a better understanding of the project, do check out our pitch deck [here](https://docs.google.com/presentation/d/e/2PACX-1vT4bMDMy_1NUigecJNweBh_VUWENRs-ixwJpuVP_o5N5nndn-Aw8xL8bRgBNq5Rg_v7_OT-0aAOxkKM/pub?start=false&loop=false&delayms=60000&slide=id.g1449db10bc0_0_5) and the demo of our application [here](https://drive.google.com/file/d/1tviIHyfpaoS_IGoR_AY8kJnKF4U5xU1Y/view?usp=sharing)!
 
 # Table of Contents
 - [About](#about)
 - [Usage](#usage)
-- [The Psychics](#the-psychics)
+- [The BUILDLERS](#The BUIDLERS)
 
 # About
-NFTs have experienced a sharp rise in popularity in the recent years. With Solana overtaking Ethereum's... 
+As it stands, current Token Gating solutions only serve as one off passes to events and gated digital content, essentially behaving as repurposed physical tickets. How can we leverage on the underlying technology behind NFTs to turn them into loyalty cards which can help brands build stronger connections with their community as well as reward users for their commmitment and loyalty?
 
-For a better understanding of the project, do check out our pitch deck [here](https://docs.google.com/presentation/d/e/2PACX-1vT4bMDMy_1NUigecJNweBh_VUWENRs-ixwJpuVP_o5N5nndn-Aw8xL8bRgBNq5Rg_v7_OT-0aAOxkKM/pub?start=false&loop=false&delayms=60000&slide=id.g1449db10bc0_0_5).
+Our solution solmate aims to bridge Token Gating with the concept of Evolving NFTs to do just that. A user would buy an NFT and use it to become verified for an event as he would in typical Token Gating. However, an evenCount would be tied to the NFT as well, which increments with every event that the user goes for. After hitting a certain count, the NFT would evolve into a different tier (this is achieved through the mutation of the NFT's uri). The evolved NFT would entitle the user to new benefits / rewards like free merchandising and access to unique gated content. 
+
+We believe that this concept would help to make NFT ownership and Token Gating a more interactive experience which will further encourage users to support their favourite brands, and onboard more people into Web 3.0!
+
+For a deeper breakdown of our solution, please refer to our pitch deck!
 
 [Back to top](#table-of-contents)
 
