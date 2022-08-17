@@ -78,7 +78,7 @@ const ApprovalPage = () => {
                 textAlign: "center",
               }}
               onClick={() => {
-                navigate("/collection");
+                navigate("/upgraded_collection");
               }}
             >
               <p>View NFTs</p>

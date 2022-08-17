@@ -7,7 +7,7 @@ import ValueCard from "../components/NftProfile/valueCard";
 import LevelCard from "../components/NftProfile/levelCard";
 import { useLocation } from "react-router-dom";
 
-const Nftprofile = () => {
+const NftProfile = () => {
   const params = useLocation();
   const cardData = params?.state?.cardData;
   const navigate = useNavigate();
@@ -76,7 +76,7 @@ const Nftprofile = () => {
             <ValueCard nftValue={cardData?.value} nftTier={cardData?.tier}/>
           </Grid>
           <Grid item xs={6}>
-            <LevelCard />
+            <LevelCard level={cardData?.level} nextEvolution={cardData?.nextEvolution}/>
           </Grid>
         </Grid>
 
@@ -85,4 +85,4 @@ const Nftprofile = () => {
   );
 };
 
-export default Nftprofile;
+export default NftProfile;

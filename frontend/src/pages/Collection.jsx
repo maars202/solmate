@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import AutoAwesomeMosaicIcon from "@mui/icons-material/AutoAwesomeMosaic";
@@ -15,6 +14,8 @@ const collectionData = [
     id: 1,
     name: 'Bulbasaur',
     collateral: bulbasaurImage,
+    level: 9,
+    nextEvolution: 10,
     tier: 'Basic',
     value: 10
   },
@@ -35,44 +36,9 @@ const collectionData = [
 ]
 
 const Collection = () => {
-  const navigate = useNavigate();
 
   return (
     <Box>
-      {/* <div
-        style={{
-          // borderRadius: "5px",
-          color: "white",
-          width: "97%",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
-      >
-        <p
-          style={{
-            paddingLeft: "10px",
-            fontFamily: "Poppins",
-            fontSize: "14px",
-          }}
-        >
-          Owned
-        </p>
-        <div
-          style={{
-            paddingTop: "12px",
-          }}
-        >
-          <ArrowDropDownIcon />
-        </div>
-
-        <div
-          style={{
-            padding: "15px",
-          }}
-        >
-        </div>
-      </div> */}
       <Grid container mb={3} alignItems='center'>
         <Grid item xs={6}>
           <Box>
@@ -85,18 +51,6 @@ const Collection = () => {
           </Box>
         </Grid>
       </Grid>
-      {/* <div
-          style={{
-            // border: "1px solid white",
-            // borderRadius: "1px",
-            paddingLeft: "15px",
-            color: "white",
-            width: "35%",
-            height: "40%",
-            display: "flex",
-            flexDirection: "row",
-          }}
-        > */}
       <Grid container spacing={2}>
         {
           collectionData.map((cardData, index) => (
