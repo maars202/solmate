@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.242b680d.chunk.css",
+    "main.js": "/static/js/main.1737f73b.chunk.js",
+    "main.js.map": "/static/js/main.1737f73b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bdcdcfc9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bdcdcfc9.js.map",
+    "static/js/2.98c5553c.chunk.js": "/static/js/2.98c5553c.chunk.js",
+    "static/js/2.98c5553c.chunk.js.map": "/static/js/2.98c5553c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.242b680d.chunk.css.map": "/static/css/main.242b680d.chunk.css.map",
+    "static/js/2.98c5553c.chunk.js.LICENSE.txt": "/static/js/2.98c5553c.chunk.js.LICENSE.txt",
+    "static/media/Bulbasaur.3c2c3dda.png": "/static/media/Bulbasaur.3c2c3dda.png",
+    "static/media/EventDetail.b3401f5d.png": "/static/media/EventDetail.b3401f5d.png",
+    "static/media/GettingStartedStep1.dbbbcff9.svg": "/static/media/GettingStartedStep1.dbbbcff9.svg",
+    "static/media/GettingStartedStep2.5619fd33.svg": "/static/media/GettingStartedStep2.5619fd33.svg",
+    "static/media/GettingStartedStep3.72608d6a.svg": "/static/media/GettingStartedStep3.72608d6a.svg",
+    "static/media/Ivysaur.0502c2d7.png": "/static/media/Ivysaur.0502c2d7.png",
+    "static/media/QR_Code.c3c6e0f6.svg": "/static/media/QR_Code.c3c6e0f6.svg",
+    "static/media/Venasaur.f4102b23.png": "/static/media/Venasaur.f4102b23.png",
+    "static/media/image_1.29ea0389.svg": "/static/media/image_1.29ea0389.svg",
+    "static/media/sync.6ae54dc8.svg": "/static/media/sync.6ae54dc8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdcdcfc9.js",
+    "static/js/2.98c5553c.chunk.js",
+    "static/css/main.242b680d.chunk.css",
+    "static/js/main.1737f73b.chunk.js"
+  ]
+}

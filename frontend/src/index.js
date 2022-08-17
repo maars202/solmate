@@ -8,7 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 
-// import GettingStartedPage from './pages/GettingStartedPage';
+import GettingStartedPage from './pages/GettingStartedPage';
 import App from './App';
 import WalletPage from './pages/WalletPage';
 import Nftprofile from './pages/NftProfile';
@@ -28,7 +28,7 @@ ReactDOM.render(
       <Box sx={{ backgroundColor: 'background.default', height: '100vh', minHeight: '100vh' }}>
         <BrowserRouter>
           <Routes>
-            {/* <Route path="/" element={<GettingStartedPage />} /> */}
+            <Route path="/" element={<GettingStartedPage />} />
             <Route path="wallet" element={<WalletPage />} />
             <Route path="home" element={<App />} />
             <Route path="collection" element={<Collection />} />

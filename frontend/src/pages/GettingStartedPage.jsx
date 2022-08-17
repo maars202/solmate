@@ -7,7 +7,7 @@ const GettingStartedPage = () => {
     const navigate = useNavigate();
 
     const handleSkip = () => {
-        navigate('/home')
+        navigate('/wallet')
     }
     return (
         <Box
